@@ -1,0 +1,8 @@
+# เวอร์ชันที่ใช้จริงบน Raspberry Pi 4B (Debian 12, Python 3.11.2)
+# ROS Noetic ของผู้ผลิตรันแยกใน Docker ไม่ต้องติดตั้งจากไฟล์นี้
+Flask==2.2.2
+roslibpy==2.1.0
+opencv-python==4.9.0.80
+numpy==1.24.2
+requests==2.28.1
+gpiozero==2.0.1
