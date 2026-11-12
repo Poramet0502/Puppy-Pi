@@ -1,0 +1,17 @@
+[Unit]
+Description=PuppyPi Pan-Tilt Laser Web App (Poramet_Project)
+After=start_node.service
+Wants=start_node.service
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+Type=simple
+Restart=on-failure
+RestartSec=5
+User=pi
+WorkingDirectory=/home/pi/Desktop/Poramet_Project/motion
+ExecStartPre=/bin/sleep 15
+ExecStart=/usr/bin/python3 /home/pi/Desktop/Poramet_Project/motion/pan_tilt_laser_app.py
+
+[Install]
+WantedBy=multi-user.target
